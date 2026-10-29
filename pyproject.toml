@@ -1,0 +1,24 @@
+[project]
+name = "gold-dashboard"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "rxsi1920", email = "preranapinakoppa192@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.5.4",
+    "pandas>=2.2",
+    "plotly>=5.20",
+    "requests>=2.34.2",
+    "streamlit>=1.35",
+    "yfinance>=1.7.0",
+]
+
+[project.scripts]
+gold-dashboard = "gold_dashboard:main"
+
+[build-system]
+requires = ["uv_build>=0.12.24,<0.13.0"]
+build-backend = "uv_build"
